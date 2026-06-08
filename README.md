@@ -1,4 +1,4 @@
-# RepoPilot
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/13e44ccd-d7b1-405d-a1fe-ee5d24fa93ad" /># RepoPilot
 
 RepoPilot is an AI Software Onboarding Agent for first-time open-source contributors.
 
@@ -12,7 +12,7 @@ The demo focuses on a concrete loop:
 6. Show how an agent helps a newcomer move from "unknown repository" to "first PR plan".
 
 ## Demo
-
+**repopilot演示讲解视频.mp4**
 [![Demo Video](docs/videocover.png)](https://github.com/finexsf/RepoPilot/releases/download/v1.0.0/repopilot.mp4)
 
 ## Run
