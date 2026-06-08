@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RepoPilot</title>
+    <link rel="stylesheet" href="/static/styles.css?v=20260607-chat-history-fix" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <button id="langToggle" type="button" class="lang-toggle" aria-label="Switch language">中文</button>
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="eyebrow">AI Software Onboarding Agent</div>
+          <h1>RepoPilot</h1>
+          <p data-i18n="subtitle">AI Software Onboarding Agent for First-time Contributors</p>
+        </div>
+        <form id="repoForm" class="analyze-form">
+          <input id="repoUrl" type="url" required value="https://github.com/pallets/flask" aria-label="GitHub Repo URL" />
+          <select id="userRole" aria-label="User role">
+            <option value="beginner" data-i18n="roleBeginner">Beginner</option>
+            <option value="intermediate" data-i18n="roleIntermediate">Intermediate</option>
+            <option value="advanced" data-i18n="roleAdvanced">Advanced</option>
+          </select>
+          <select id="goal" aria-label="Goal">
+            <option value="contribute" data-i18n="goalContribute">First Contribution</option>
+            <option value="understand" data-i18n="goalUnderstand">Understand Project</option>
+            <option value="run" data-i18n="goalRun">Run Project</option>
+          </select>
+          <button type="submit" data-i18n="analyze">Analyze Repository</button>
+          <button id="loadDemo" type="button" class="secondary" data-i18n="loadDemo">Load Demo</button>
+        </form>
+      </section>
+
+      <section class="run-status">
+        <div>
+          <span data-i18n="statusLabel">Status</span>
+          <strong id="status" data-i18n="ready">Ready</strong>
+        </div>
+        <div>
+          <span data-i18n="progressLabel">Progress</span>
+          <strong id="progress">0%</strong>
+        </div>
+        <div class="wide">
+          <span data-i18n="agentStepLabel">Agent Step</span>
+          <strong id="currentStep" data-i18n="initialStep">Paste a GitHub repository URL and start analysis.</strong>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="RepoPilot sections">
+        <button class="tab active" data-tab="overview" data-i18n="tabOverview">Overview</button>
+        <button class="tab" data-tab="architecture" data-i18n="tabArchitecture">Architecture</button>
+        <button class="tab" data-tab="learning" data-i18n="tabLearning">Learning Path</button>
+        <button class="tab" data-tab="contribution" data-i18n="tabContribution">Contribution Radar</button>
+        <button class="tab" data-tab="trace" data-i18n="tabTrace">Agent Trace</button>
+        <button class="tab" data-tab="chat" data-i18n="tabChat">Agent Chat</button>
+      </nav>
+
+      <section id="overviewTab" class="tab-page active">
+        <div id="overviewPage" class="empty-state" data-i18n="emptyOverview">No analysis yet.</div>
+      </section>
+
+      <section id="architectureTab" class="tab-page">
+        <div id="architecturePage" class="empty-state" data-i18n="emptyArchitecture">Architecture graph will appear here.</div>
+      </section>
+
+      <section id="learningTab" class="tab-page">
+        <div id="learningPage" class="empty-state" data-i18n="emptyLearning">Personalized onboarding path will appear here.</div>
+      </section>
+
+      <section id="contributionTab" class="tab-page">
+        <div id="contributionPage" class="empty-state" data-i18n="emptyContribution">Contribution radar will appear here.</div>
+      </section>
+
+      <section id="traceTab" class="tab-page">
+        <div id="tracePage" class="empty-state" data-i18n="emptyTrace">Multi-agent trace will appear here.</div>
+      </section>
+
+      <section id="chatTab" class="tab-page">
+        <div id="chatPage" class="empty-state" data-i18n="emptyChat">Agent chat will appear here.</div>
+      </section>
+    </main>
+    <script src="/static/app.js?v=20260607-chat-history-fix"></script>
+  </body>
+</html>
