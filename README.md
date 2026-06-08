@@ -13,7 +13,7 @@ The demo focuses on a concrete loop:
 
 ## Demo
 
-<video src="D:\campus\夏令营\中科院软件所中文信息处理实验室\coding\repopilot演示讲解视频.mp4"></video>
+[Watch Full Demo Video](https://github.com/finexsf/RepoPilot/releases/download/v1.0.0/repopilot.mp4)
 
 ## Run
 
