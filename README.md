@@ -13,7 +13,7 @@ The demo focuses on a concrete loop:
 
 ## Demo
 
-[![Demo Video](docs/democover.png)](https://github.com/finexsf/RepoPilot/releases/download/v1.0.0/repopilot.mp4)
+[![Demo Video](docs/videocover.png)](https://github.com/finexsf/RepoPilot/releases/download/v1.0.0/repopilot.mp4)
 
 ## Run
 
